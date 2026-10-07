@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="tr">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="theme-color" content="#101e19">
+  <meta name="description" content="Outvoters: ada yaşamı, fiziksel yarışmalar ve sosyal strateji üzerine kurulu bir indie PC oyunu. İnteraktif konsept önizlemesini deneyimle.">
+  <title>Outvoters | Aynı ada. Farklı niyetler.</title>
+  <link rel="icon" type="image/png" sizes="64x64" href="assets/island-favicon.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#main" data-i18n="skip">İçeriğe geç</a>
+  <header class="site-header">
+    <a class="wordmark brand-logo" href="#top" aria-label="Outvoters"><img class="brand-mark" src="assets/island-mark.webp" alt="" aria-hidden="true" width="64" height="64"><span class="brand-name"><strong>OUTVOTERS</strong></span></a>
+    <nav class="desktop-nav" aria-label="Ana menü">
+      <a href="#island" data-i18n="navIsland">Ada hayatı</a>
+      <a href="#challenges" data-i18n="navChallenges">Yarışmalar</a>
+      <a href="#prototype" data-i18n="navDemo">İnteraktif demo</a>
+    </nav>
+    <div class="header-controls">
+      <button class="language-button" id="language-button" aria-label="Switch to English">EN</button>
+      <button class="menu-button" id="menu-button" aria-label="Menüyü aç" aria-expanded="false" aria-controls="mobile-nav"><span></span><span></span></button>
+      <a class="header-cta" href="#prototype" data-i18n="enterIsland">Adaya adım at</a>
+    </div>
+    <nav class="mobile-nav" id="mobile-nav" aria-label="Mobil menü" hidden>
+      <a href="#island" data-i18n="navIsland">Ada hayatı</a>
+      <a href="#challenges" data-i18n="navChallenges">Yarışmalar</a>
+      <a href="#prototype" data-i18n="navDemo">İnteraktif demo</a>
+      <a href="#development" data-i18n="navDevelopment">Geliştirme</a>
+    </nav>
+  </header>
+  <main id="main">
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <img class="hero-image" src="assets/island.webp" width="1536" height="1024" alt="Gün batımında tropik ada, ormanlık kayalıklar ve kıyıdaki küçük kamp" fetchpriority="high">
+      <div class="hero-shade"></div>
+      <div class="atmosphere" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+      <div class="hero-content">
+        <p class="eyebrow" data-i18n="heroKicker">Bir ada. Bir kamp. Tek kazanan.</p>
+        <h1 id="hero-title" data-i18n="heroTitle">AYNI ADA.<br>FARKLI<br><span>NİYETLER.</span></h1>
+        <p class="hero-description" data-i18n="heroDescription">Birlikte bir kamp kur. Parkurda sınırlarını zorla. Akşam, kime güveneceğine karar ver.</p>
+        <a class="button button-sand" href="#prototype"><span class="play-symbol" aria-hidden="true"></span><span data-i18n="heroCta">Ada döngüsünü dene</span></a>
+        <p class="hero-stage" data-i18n="heroStage">Erken geliştirme aşamasındaki indie PC oyunu</p>
+      </div>
+      <div class="hero-bottom">
+        <span class="hero-caption" data-i18n="conceptArt">Konsept görseli</span>
+        <a class="scroll-cue" href="#island"><span class="scroll-line" aria-hidden="true"></span><span data-i18n="scroll">Kıyının ötesinde</span></a>
+        <span class="hero-location">OUTVOTERS</span>
+      </div>
+    </section>
+
+    <div class="rhythm-strip" aria-hidden="true">
+      <div class="rhythm-track">
+        <div class="rhythm-group"><span data-i18n="strip">KAMP KUR / YARIŞ / PAYLAŞ / OY VER /</span><span data-i18n="strip">KAMP KUR / YARIŞ / PAYLAŞ / OY VER /</span><span data-i18n="strip">KAMP KUR / YARIŞ / PAYLAŞ / OY VER /</span></div>
+        <div class="rhythm-group"><span data-i18n="strip">KAMP KUR / YARIŞ / PAYLAŞ / OY VER /</span><span data-i18n="strip">KAMP KUR / YARIŞ / PAYLAŞ / OY VER /</span><span data-i18n="strip">KAMP KUR / YARIŞ / PAYLAŞ / OY VER /</span></div>
+      </div>
+    </div>
+
+    <section class="island-section section-shell" id="island" aria-labelledby="island-title">
+      <div class="island-copy reveal">
+        <p class="section-index" data-i18n="islandKicker">Gündüz takım arkadaşın. Akşam rakibin.</p>
+        <h2 id="island-title" data-i18n="islandTitle">ONLARA<br>İHTİYACIN VAR.<br><span>ONLARI YENMEN DE.</span></h2>
+        <p class="body-copy" data-i18n="islandBody">Çatıyı birlikte yaparsınız. Son yemeği paylaşırsınız. Sonra aynı ödül için yarışırsınız. Adada yaptığın her şey, bir sonraki yarışmayı ve insanların sana bakışını etkiler.</p>
+        <div class="camp-notes">
+          <div><span class="note-label" data-i18n="campNoteTitle">Yağmur yaklaşıyor</span><p data-i18n="campNoteBody">Çatıyı mı bitireceksin, ateşi mi koruyacaksın, yoksa dinlenecek misin?</p></div>
+          <div><span class="note-label" data-i18n="voiceNoteTitle">Yakınlık mikrofonu</span><p data-i18n="voiceNoteBody">Kamp ateşinde sohbet. Ormanda özel konuşmalar. Konseyde herkesin duyduğu kararlar.</p></div>
+        </div>
+      </div>
+      <figure class="camp-figure reveal">
+        <div class="image-wrap"><img src="assets/camp.webp" width="1536" height="1024" alt="Palmiye çatılı barınak ve kumsaldaki kamp ateşi" loading="lazy"><span class="image-stamp" data-i18n="campStamp">KAMP / AKŞAM</span></div>
+        <figcaption><span data-i18n="campCaption">Önce birlikte hayatta kalırsınız.</span><span data-i18n="conceptArt">Konsept görseli</span></figcaption>
+      </figure>
+    </section>
+
+    <section class="challenges-section section-shell" id="challenges" aria-labelledby="challenges-title">
+      <div class="section-heading reveal"><div><p class="section-index" data-i18n="challengeKicker">Becerin konuşsun</p><h2 id="challenges-title" data-i18n="challengeTitle">ADA SENİ<br><span>HAREKETE GEÇİRİR.</span></h2></div><p data-i18n="challengeIntro">Suya gir. Dengeni bul. Hedefi vur.<br>Sonucu senin hareketlerin belirlesin.</p></div>
+      <div class="challenge-layout">
+        <div class="challenge-list" role="tablist" aria-label="Yarışma konseptleri">
+          <button class="challenge-tab active" id="challenge-tab-swim" role="tab" aria-selected="true" aria-controls="challenge-detail" data-challenge="swim"><span class="challenge-number">01</span><span><strong data-i18n="swimTitle">Şamandıra kapmaca</strong><small data-i18n="swimType">Yüzme / Rota seçimi</small></span><span class="tab-mark" aria-hidden="true">+</span></button>
+          <button class="challenge-tab" id="challenge-tab-balance" role="tab" aria-selected="false" aria-controls="challenge-detail" tabindex="-1" data-challenge="balance"><span class="challenge-number">02</span><span><strong data-i18n="balanceTitle">Islak iskele</strong><small data-i18n="balanceType">Denge / Parkur</small></span><span class="tab-mark" aria-hidden="true">+</span></button>
+          <button class="challenge-tab" id="challenge-tab-throw" role="tab" aria-selected="false" aria-controls="challenge-detail" tabindex="-1" data-challenge="throw"><span class="challenge-number">03</span><span><strong data-i18n="throwTitle">Son atış</strong><small data-i18n="throwType">Fırlatma / Zamanlama</small></span><span class="tab-mark" aria-hidden="true">+</span></button>
+          <button class="challenge-tab" id="challenge-tab-carry" role="tab" aria-selected="false" aria-controls="challenge-detail" tabindex="-1" data-challenge="carry"><span class="challenge-number">04</span><span><strong data-i18n="carryTitle">Birlikte taşı</strong><small data-i18n="carryType">Koordinasyon / Takım oyunu</small></span><span class="tab-mark" aria-hidden="true">+</span></button>
+        </div>
+        <figure class="course-figure" id="challenge-detail" role="tabpanel" aria-labelledby="challenge-tab-swim" tabindex="0">
+          <img src="assets/course.webp" width="1536" height="1024" alt="Tropik kıyıda yüzme şamandıraları, ahşap denge parkuru ve atış hedefleri" loading="lazy">
+          <figcaption><span class="section-index" data-i18n="plannedChallenge">Planlanan yarışma</span><h3 id="challenge-name">Şamandıra kapmaca</h3><p id="challenge-description">Bayrağa ulaşmak için güvenli uzun rotayı mı, açık sudaki kısa yolu mu seçeceksin? Bayrağı kıyıya ilk getiren kazanır.</p></figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section class="prototype-section" id="prototype" aria-labelledby="prototype-title">
+      <div class="section-shell">
+        <div class="section-heading reveal"><div><p class="section-index" data-i18n="demoKicker">Okumak yerine bir karar ver</p><h2 id="prototype-title" data-i18n="demoTitle">ADADA BİR GÜN.<br><span>SENİN KARARLARIN.</span></h2></div><p data-i18n="demoIntro">Kampı hazırla, atışını yap, ödül için oy ver.<br>Oyun döngüsünün tarayıcıdaki küçük bir önizlemesi.</p></div>
+        <div class="demo-shell">
+          <div class="demo-topline"><span data-i18n="demoLabel">İnteraktif konsept demosu</span><button class="text-button" id="reset-demo" data-i18n="reset">Günü yeniden başlat</button></div>
+          <div class="demo-layout">
+            <div class="demo-world" id="demo-world">
+              <img id="demo-image" src="assets/camp.webp" width="1536" height="1024" alt="Demo kampının konsept görseli" loading="lazy">
+              <div class="demo-world-shade"></div>
+              <div class="weather-lines" aria-hidden="true"></div>
+              <div class="world-top"><span id="demo-daytime">AKŞAM ÖNCESİ</span><span class="local-label" data-i18n="localDemo">Yerel demo</span></div>
+              <div class="world-story"><p class="section-index" id="world-kicker">Yağmur yaklaşıyor</p><h3 id="world-title">Kampın sana<br>ihtiyacı var.</h3><p id="world-description">Herkese yardım edecek bir hazırlık mı, kendin için dinlenmek mi?</p></div>
+              <div class="world-stats"><div><span data-i18n="energy">Enerji</span><strong id="energy-value">72<span>/100</span></strong><div class="stat-track"><span id="energy-bar" style="--value:72%"></span></div></div><div><span data-i18n="campMood">Kamp ilişkisi</span><strong id="trust-value">Kararsız</strong><p data-i18n="demoStatsNote">Simülasyon değerleri</p></div></div>
+            </div>
+            <div class="demo-panel">
+              <ol class="stage-track" aria-label="Demo aşamaları"><li class="active" data-stage="camp"><span>01</span><span data-i18n="stageCamp">Kamp</span></li><li data-stage="challenge"><span>02</span><span data-i18n="stageChallenge">Yarışma</span></li><li data-stage="council"><span>03</span><span data-i18n="stageCouncil">Konsey</span></li></ol>
+              <div class="demo-scene" id="camp-scene">
+                <h3 data-i18n="campChoiceTitle">Vaktini neye ayırırsın?</h3>
+                <p class="scene-copy" data-i18n="campChoiceBody">Tek bir hazırlık seç. Sonucu parkura taşı.</p>
+                <div class="choice-list">
+                  <button class="choice-button" data-choice="shelter"><span class="choice-title" data-i18n="shelterChoice">Çatıyı tamamla</span><span data-i18n="shelterHint">Kamp kuru kalır. Birlikte toparlanırsınız.</span></button>
+                  <button class="choice-button" data-choice="food"><span class="choice-title" data-i18n="foodChoice">Yemek hazırla</span><span data-i18n="foodHint">Enerji kazanırsın. Yemeği paylaşırsın.</span></button>
+                  <button class="choice-button" data-choice="rest"><span class="choice-title" data-i18n="restChoice">Kendin için dinlen</span><span data-i18n="restHint">Enerjin dolar. Kamp işi bekler.</span></button>
+                </div>
+                <p class="scene-feedback" id="camp-feedback" aria-live="polite" data-i18n="campEmpty">Henüz bir hazırlık seçmedin.</p>
+                <button class="button button-sand full-width" id="to-challenge" disabled data-i18n="toChallenge">Atış yarışmasına katıl</button>
+              </div>
+              <div class="demo-scene" id="challenge-scene" hidden>
+                <h3 data-i18n="throwDemoTitle">Tek hedef. Üç atış.</h3>
+                <p class="scene-copy" data-i18n="throwDemoBody">İşaret merkezdeki bölgeye geldiğinde atış yap. Klavyede boşluk tuşunu da kullanabilirsin.</p>
+                <div class="timing-game" id="timing-game"><div class="target-zone"><span data-i18n="target">HEDEF</span></div><span class="timing-cursor" id="timing-cursor"></span><div class="timing-ticks" aria-hidden="true"><span>0</span><span>50</span><span>100</span></div></div>
+                <div class="aim-control" id="aim-control" hidden><label for="aim-slider" data-i18n="manualAim">Atış konumu</label><input id="aim-slider" type="range" min="0" max="100" value="20"></div>
+                <div class="throw-status"><span id="throws-left">Kalan atış: 3</span><strong id="score-value">0 <span data-i18n="points">puan</span></strong></div>
+                <button class="button button-sand full-width" id="throw-button" data-i18n="throwButton">Atış yap</button>
+                <button class="text-button accessible-mode" id="aim-mode" aria-pressed="false" data-i18n="aimMode">Elle nişan al</button>
+                <p class="scene-feedback" id="throw-feedback" aria-live="polite" data-i18n="throwReady">Hazır olduğunda ilk atışını yap.</p>
+                <button class="button button-outline full-width" id="to-council" hidden data-i18n="toCouncil">Kamp konseyine geç</button>
+              </div>
+              <div class="demo-scene" id="council-scene" hidden>
+                <h3 data-i18n="councilTitle">Ödül kime yarasın?</h3>
+                <p class="scene-copy" data-i18n="councilBody">Kampın ödülünü nasıl kullanacağına oy ver. Bu önizlemede yalnızca senin oyun sayılır.</p>
+                <div class="vote-options" role="group" aria-label="Ödül seçimi"><button data-vote="meal" class="vote-option" data-i18n="voteMeal">Ortak yemek</button><button data-vote="roof" class="vote-option" data-i18n="voteRoof">Barınak malzemesi</button><button data-vote="practice" class="vote-option" data-i18n="votePractice">Antrenman ekipmanı</button></div>
+                <p class="scene-feedback" id="vote-feedback" aria-live="polite" data-i18n="voteEmpty">Oyunu kullan, günün sonucunu gör.</p>
+                <div class="day-result" id="day-result" hidden><p class="section-index" data-i18n="dayResult">Günün hikâyesi</p><p id="result-copy"></p><button class="button button-sand full-width" id="play-again" data-i18n="playAgain">Farklı bir karar dene</button></div>
+              </div>
+              <div class="demo-error" id="demo-error" role="alert" hidden><p data-i18n="demoError">Önizleme başlatılamadı. Günü yeniden başlatıp tekrar deneyebilirsin.</p><button class="text-button" id="retry-demo" data-i18n="retry">Tekrar dene</button></div>
+            </div>
+          </div>
+          <p class="demo-footnote" data-i18n="demoFootnote">Bu, oyun fikrinin çalışan bir tarayıcı önizlemesidir. Tam 3D oyun, çevrimiçi oyuncular ve mikrofon bağlantısı bu demoda yer almaz.</p>
+        </div>
+      </div>
+    </section>
+
+    <section class="social-section section-shell reveal" aria-labelledby="social-title">
+      <p class="section-index" data-i18n="socialKicker">Ada sadece fiziksel bir sınav değil</p>
+      <div class="social-layout"><h2 id="social-title" data-i18n="socialTitle">EN İYİ ATIŞIN<br><span>SON SÖZ OLMAYABİLİR.</span></h2><div><p class="body-copy" data-i18n="socialBody">Konseydeki oyun kimin risk alacağını değiştirebilir. Düellodaki becerin seni kurtarabilir. İzleyiciler de sıradaki yarışmayı veya adanın hava koşullarını seçebilir.</p><p class="social-rule" data-i18n="socialRule">Planlanan ilke: oylama riski belirler, oyuncu sonucu oynayarak değiştirir.</p></div></div>
+    </section>
+
+    <section class="development-section" id="development" aria-labelledby="development-title">
+      <div class="section-shell development-layout"><div><p class="section-index" data-i18n="developmentKicker">Adayı birlikte şekillendiriyoruz</p><h2 id="development-title" data-i18n="developmentTitle">HİKÂYE<br><span>DAHA YENİ BAŞLIYOR.</span></h2><p class="body-copy" data-i18n="developmentBody">Outvoters, Steam için planlanan erken aşama bir indie PC oyunu. Bu sayfa oyun vizyonunu ve ilk interaktif konsepti paylaşıyor.</p><a class="button button-sand" href="#prototype" data-i18n="backToDemo">Konsepte geri dön</a></div><div class="development-notes"><article><h3 data-i18n="nowTitle">Şimdi</h3><p data-i18n="nowBody">Ada, kamp ve yarışma döngüsünü gösteren bu interaktif önizleme.</p></article><article><h3 data-i18n="nextTitle">Sıradaki adım</h3><p data-i18n="nextBody">Küçük bir adada hareket, yüzme, atış ve ortak barınak sistemlerini deneyen oyun prototipi.</p></article><article><h3 data-i18n="aiTitle">Planlanan Claude kullanımı</h3><p data-i18n="aiBody">Geliştirme ve test desteği; ileride sınırlandırılmış sunucu anlatımı ve sezon özetleri. API entegrasyonu henüz canlı değil. Kurallar ve kazanan oyun sistemi tarafından belirlenir.</p></article></div></div>
+    </section>
+  </main>
+  <footer class="site-footer section-shell"><a class="wordmark brand-logo" href="#top" aria-label="Outvoters"><img class="brand-mark" src="assets/island-mark.webp" alt="" aria-hidden="true" width="64" height="64"><span class="brand-name"><strong>OUTVOTERS</strong></span></a><p data-i18n="footerStage">Bağımsız bir oyun. Erken geliştirme.</p><button class="text-button" id="motion-toggle" aria-pressed="false" data-i18n="pauseMotion">Hareketi durdur</button><a href="#development" data-i18n="navDevelopment">Geliştirme</a></footer>
+  <noscript><p class="noscript-note">İnteraktif önizleme için JavaScript gerekir. Ada hayatı ve yarışma konseptlerini bu sayfada okuyabilirsin.</p></noscript>
+</body>
+</html>
